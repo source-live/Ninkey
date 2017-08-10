@@ -12,7 +12,7 @@ class Datastore:  # Used Datastore("myds",["my","path"])
     ds_path = f_path
     print("".join(["Successfully created datastore path ",f_path])) #e.g. Datastore.name("myds",['super','path'])  =  Successfully created datastore path C:/super/path
     
-  def store(data,name):
+  def store(name,data):
     if ds_path == None:
       print("No specified datastore.")
     else:
