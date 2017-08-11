@@ -20,3 +20,11 @@ class Datastore:  # Used Datastore("myds",["my","path"])
       path = os.path.join(ds_path, "".join([name,".ds"]))
       f = open(filepath, "w+")
       f.write(data)
+      
+  def get(name):
+    if ds_path == None:
+      print("No specified datastore.")
+    else:
+      path = os.path.join(ds_path, "".join([name,".ds"]))
+      f = open(filepath, "r")
+      return f
