@@ -16,7 +16,7 @@ class Datastore:  # Used Datastore("myds",["my","path"])
     if ds_path == None:
       print("No specified datastore.")
     else:
-      data.format(n=name) # So you can use the ds name in the content, e.g. Datastore.store("Datastore name: {n}","my_datastore")
+      data = data.format(n=name) # So you can use the ds name in the content, e.g. Datastore.store("Datastore name: {n}","my_datastore")
       path = os.path.join(ds_path, "".join([name,".ds"]))
       f = open(filepath, "w+")
       f.write(data)
